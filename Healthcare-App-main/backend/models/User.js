@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema({
     role: { type: String, enum: ['admin', 'doctor', 'patient'], default: 'patient' },
     phone: { type: String },
     isVerified: { type: Boolean, default: false },
-    otp: { type: Number },                      // Add OTP field
+    otp: { type: String },                      // Add OTP field
     otpVerified: { type: Boolean, default: false }, // Add OTP verification flag
 });
  
